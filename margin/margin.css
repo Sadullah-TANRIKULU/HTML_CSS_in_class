@@ -1,0 +1,27 @@
+.demo {
+    background-color: aqua;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.one {
+    background-color: violet;
+    height: 50px;
+
+}
+.two {
+    background-color: brown;
+    height: 50px;
+    width: 50px;
+    margin: inherit; /*demo dan yani parent tan alır*/
+}
+.three {
+    background-color: yellowgreen;
+}
+
+
+
+
+
+
+

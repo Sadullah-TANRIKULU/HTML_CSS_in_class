@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="result.html" method="get"> <!--default method get tir, action backend tarafı-->
+    <div>
+        <label for="name">isim</label>
+        <input id="name" type="text"  name="isim" placeholder="adınızı giriniz..." required autocomplete="off"> <!--name olmazsa backend e gitmez, required zorunlu giriş, autocomplete off olursa eski yazılan gelmiyor-->
+        <br><br>
+        <label for="lastname">soyisim</label>
+        <input id="lastname" type="text" name="soyisim" placeholder="soyisim lütfen..."> <!--value olsa örnek yazım olur-->
+
+        <br><br>
+
+        
+    </div>
+    <div>
+        <label for="sifre">parola</label>
+        <input type="password" name="parola" id="sifre"> <!--backend tarafında görünür-->
+        <br>
+    </div>
+    <div>
+        <label for="gender">cinsiyet</label>
+        <br>
+        <label for="gender">erkek</label>
+        <input type="radio" name="cinsiyet" id="gender" value="erkek">
+        <label for="gender">kadın</label>
+        <input type="radio" name="cinsiyet" id="gender" value="kadın" checked> <!--checked olursa seçili gelir-->
+        <label for="gender">lgbti</label>
+        <input type="radio" name="cinsiyet" id="gender" value="lgbti">
+    </div>
+    <br>
+    <div>
+        <p>favori hayvan dostlarınızı seçin</p>
+        <input type="checkbox" name="animal_1" id="panda" value="panda">
+        <label for="panda">panda</label>
+        <br><br>
+        <input type="checkbox" name="animal_2" id="kedi" value="kedi" required>
+        <label for="kedi">kedi</label>
+        <br><br>
+        <input type="checkbox" name="animal_3" id="pars" value="pars">
+        <label for="pars">pars</label>
+    </div>
+    <br><br>
+    <label for="age">yaş</label>
+    <input type="number" name="girilen_yaş" id="age" min="18" max="60" step="2" placeholder="yaşınızı giriniz...">
+    <br><br>
+    <div>
+        <label for="search">search</label>
+        <input type="search" name="arandı" id="search" placeholder="arama..." size="50"> <!--size ekledik uzadı-->
+    </div>
+    <br><br>
+        <div>
+            <label for="color">renk seçin</label>
+            <input type="color" name="seçilen_renk" id="color">
+        </div>
+        <br><br>
+        <div>
+            <label for="file">dosya seçin</label>
+            <input type="file" name="seçilen_dosya" id="file">
+        </div>
+    <br><br>
+        <div>
+            <label for="date">tarih</label>
+            <input type="date" name="seçilen_tarih" id="date" min="2022-01-01"> <!--min den daha geri seçtirmez, max tam tersi-->
+            <!--attribute kısmında boşluk koymamalıyız js de sorun olabilir-->
+        </div>
+    <br><br>
+    <div>
+        <label for="email">email giriniz</label>
+        <input type="email" name="email" id="email"> <!--email formatına göre girilmeli-->
+    </div>
+    <div>
+        <label for="no">telefon no</label>
+        <input type="tel" name="tel_no" id="no" pattern="[0-9]{3}-[0-9]{7}" placeholder="xxx-xxxxxxx">
+    </div>
+
+    <div>
+        <br><br>
+        <label for="şeker">hangi tatlıyı seversiniz</label>
+        <br><br>
+        <select name="seçilen_tatlılar" id="şeker" size="10" multiple>
+            <optgroup label="sütlüler">
+            <option value="sütlaç">sütlaç</option>
+            <option value="keşkül">keşkül</option>
+            <option value="aşure">aşure</option>
+            <option value="magnolia">magnolia</option>
+            <option value="süpangle">süpangle</option>
+        </optgroup>
+        <optgroup label="şerbetliler">
+            <option value="baklava">baklava</option>
+            <option value="künefe">künefe</option>
+            <option value="katmer">katmer</option>
+            
+        </optgroup>
+        </select> 
+        <br><br>  
+    </div>
+    <div>
+        <label for="yorum">yorum</label>
+        <br>
+        <textarea name="girilen_yorum" id="yorum" style="resize: none; width: 75%;" placeholder="do not hesitate to make comment..."></textarea>
+    </div>
+
+    <br><br>
+        <div>
+            <label for="input-browser">browser</label>
+            <input type="text" name="kullanılan_browser" list="browser" id="input-browser"> <!--input id ile datalist id aynı olursa çalışmaz-->
+            <datalist id="browser">
+                <option value="chrome"></option>
+                <option value="safari"></option>
+                <option value="brave"></option>
+                <option value="edge"></option>
+                <option value="opera"></option>
+                <option value="firefox"></option>
+
+            </datalist>
+        </div>
+        <br><br>
+        <div>
+            <fieldset>
+                <legend> personal info </legend>
+                <br><br>
+                <label for="fname">ad</label><br>
+                <input type="text" name="fname" id="fname" placeholder="adınız..."><br>
+                <label for="lname">soy ad</label><br>
+                <input type="text" name="lname" id="lname" placeholder="soy adınız..."><br>
+
+            </fieldset>
+        </div>
+        <br><br>
+
+        
+    <input type="reset" value="reset"> <!--formu sıfırlar-->
+    <br><br>
+
+
+    <input type="submit" value="send">
+        <br>
+    </form>
+</body>
+</html>

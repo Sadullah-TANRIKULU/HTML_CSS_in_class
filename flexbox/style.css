@@ -1,0 +1,24 @@
+.container {
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content:space-evenly;
+}
+.container div {
+    width: 5rem;
+    height: 5rem;
+    background-color: yellowgreen;
+    margin: 1rem;
+}
+
+
+
+
+
+
+/*  */
+
+
+
+

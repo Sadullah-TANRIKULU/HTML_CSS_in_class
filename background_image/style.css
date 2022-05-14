@@ -1,0 +1,11 @@
+* {
+    color: #fff;
+}
+
+header.banner .bg {
+    background-image: url("./tree.webp");
+    background-size: cover;
+    height: 100vh;
+}
+
+

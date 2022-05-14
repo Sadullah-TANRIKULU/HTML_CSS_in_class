@@ -1,0 +1,87 @@
+/* transform inline elementlerde çalışmaz
+x ekseninde (rotate x) döndürme işlemi etkisiz bir işlemdir */
+
+.yazi {
+    text-align: center;
+    font-size: 2rem;
+    width: 50vw;
+    margin: 2rem;
+}
+/* ROTATE */
+.yazi1 {
+    background-color: aqua;
+    transform: rotateX(180deg);
+}
+.yazi2 {
+    background-color: tomato;
+    transform: rotateY(180deg);
+} 
+.yazi3 {
+    background-color: brown;
+    transform: rotate(-1.02turn);
+}
+
+/* SCALE */
+.yazi4 {
+    background-color: yellow;
+}
+.yazi4:hover {
+    transform: scaleX(2);
+}
+.yazi5 {
+    background-color: green;
+}
+.yazi5:hover {
+    transform: scale(1.05);
+}
+/* web sayfasında 0-0 origin koordinat noktası sol en üst noktadır */
+
+.translatex {
+    background-color: lightblue;
+}
+.translatex:hover {
+    transform: translateX(50px);
+}
+.translatexy {
+    background-color: lightblue;
+}
+.translatexy:hover {
+    transform: translate(-10px, -10px);
+}
+/*% verince içinde bulunduğu parent ın yüzdesi kadar hareket eder*/
+
+/* TRANSITION */
+.translatexy:hover {
+    transition: transform 2s;
+    transform: translate(-10px, -10px);
+}
+
+.transition-div {
+    text-align: center;
+}
+.transition-btn {
+    width: 5rem;
+    padding: 1rem;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 1s, color .5s;
+    transition: all .5s;
+}
+.transition-btn:hover {
+    background-color: darkgreen;
+    color: antiquewhite;
+}
+/* transition: stil_ismi süre tür gecikme */
+
+
+
+
+
+
+
+
+
+
+

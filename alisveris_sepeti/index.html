@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Alışveriş Sepeti</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="header">Alışveriş Sepeti</h1>
+    </header>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th width="100">Ürün Kodu</th>
+                    <th width="300">Ürün Adı</th>
+                    <th width="100">Miktar</th>
+                    <th width="100">Birim Fiyat</th>
+                    <th width="100">Ara Toplam</th>
+                    <th width="75"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>154654</td>
+                    <td>Notebook</td>
+                    <td id="miktar">1</td>
+                    <td id="birim-fiyat">5400</td>
+                    <td id="ara-toplam"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>456466</td>
+                    <td>Klavye</td>
+                    <td>2</td>
+                    <td>80 ₺</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>564646</td>
+                    <td>Monitör</td>
+                    <td>1</td>
+                    <td>700 ₺</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>123598</td>
+                    <td>Mouse</td>
+                    <td>2</td>
+                    <td>50 ₺</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>613448</td>
+                    <td>Play Station</td>
+                    <td>1</td>
+                    <td>2500 ₺</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>789799</td>
+                    <td>Usb Bellek</td>
+                    <td>3</td>
+                    <td>120 ₺</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr class="foot-row">
+                    <td colspan="4" style="text-align: right;">TOPLAM</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="buttons">
+            <div class="btn"><button type="submit">Alışverişe Devam</button></div>
+            <div><button type="submit">Ödemeye Geç</button></div>
+        </div>
+
+    </section>
+    <script src="./script.js" defer></script>
+</body>
+
+</html>

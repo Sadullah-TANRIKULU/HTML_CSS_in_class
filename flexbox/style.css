@@ -1,15 +1,120 @@
+* {
+    font-size: 1.2rem;
+}
+
 .container {
-    background-color: pink;
+    background-color: yellowgreen;
     display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
-    justify-content:space-evenly;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 10px; /* satır sütun*/
 }
 .container div {
     width: 5rem;
     height: 5rem;
-    background-color: yellowgreen;
+    background-color: pink;
     margin: 1rem;
+}
+
+.container1 {
+    height: 20rem;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* height varsa stretch yapamaz*/
+    gap: 10px 20px;
+
+}
+
+.container1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    margin: 1rem 0;
+    background-color: lightskyblue;
+    /* height: 5rem; */
+    text-align: center;
+}
+
+
+
+/* align-items center tam yapmak için parent ın height vermemiz lazım */
+
+/* flex direction column olursa parent a width vermek lazım */
+
+ul {
+    height: 20rem;
+    background-color: rgb(255, 255, 0);
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    align-items: flex-start;
+}
+
+ul li {
+    background-color: mediumorchid;
+    width: 4rem;
+    height: 4rem;
+}
+
+.container3 {
+    background-color: mediumspringgreen;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+
+.container3 div {
+    background-color: mediumvioletred;
+    width: 5rem;
+    margin: 1rem;
+    flex-grow: 1;
+}
+
+div.grow2 {
+    flex-grow: 2;
+}
+
+div.grow3 {
+    flex-grow: 3;
+}
+
+div.no-grow {
+    flex-grow: 0;
+}
+/*The default value of the flex property is: flex-grow: 0, flex-shrink: 1, flex-basis: 0%. */
+
+.container4 {
+    background-color: mediumpurple;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+.container4 div {
+    color: white;
+    background-color: mediumblue;
+    width: 5rem;
+    margin: 1rem;
+    flex-grow: 1;
+}
+
+div.div1 {
+    width: 10%;
+}
+div.div2 {
+    width: 20%;
+}
+div.div3 {
+    width: 30%;
+}
+div.div4 {
+    width: 40%;
 }
 
 
@@ -17,7 +122,13 @@
 
 
 
-/*  */
+
+
+
+
+
+
+
 
 
 

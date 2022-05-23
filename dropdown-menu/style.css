@@ -1,0 +1,13 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.dropdown:hover .dropdown__menu {
+    display: block;
+}
+
+
+
+
+
